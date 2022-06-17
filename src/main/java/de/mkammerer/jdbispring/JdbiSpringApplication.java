@@ -20,6 +20,7 @@ public class JdbiSpringApplication {
 		SpringApplication.run(JdbiSpringApplication.class, args);
 	}
 
+	@Bean
 	CommandLineRunner createInitialTasks(TaskService taskService) {
 		return args -> {
 			Task task = taskService.createNew("Understand this code", ZonedDateTime.now().plusDays(1));
