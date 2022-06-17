@@ -7,6 +7,11 @@ An example project which showcases Spring Boot with JDBI.
 * JDBI Spring configuration is
   in [JdbiConfiguration](src/main/java/de/mkammerer/jdbispring/database/JdbiConfiguration.java)
 
+## Running
+
+* `./mvnw spring-boot:run` OR
+* start the `main` method of `de.mkammerer.jdbispring.JdbiSpringApplication` in your IDE
+
 ## Find all tasks
 
 * `curl http://localhost:8080/task -s -S -v -H "Accept: application/json, */*"`
