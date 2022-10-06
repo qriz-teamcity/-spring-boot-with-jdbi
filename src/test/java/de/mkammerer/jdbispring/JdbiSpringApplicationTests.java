@@ -32,7 +32,7 @@ class JdbiSpringApplicationTests {
 		ResponseEntity<TaskDto[]> tasks = restTemplate.getForEntity("/task", TaskDto[].class);
 		assertThat(tasks.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(tasks.getBody()).containsExactly(
-				new TaskDto(1, "Understand this code", "2022-10-07T11:44:49.900631+02:00")
+				new TaskDto(1, "Understand this code", null)
 		);
 
 		// Create a new task
