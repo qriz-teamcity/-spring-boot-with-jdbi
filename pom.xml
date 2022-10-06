@@ -15,7 +15,7 @@
     <description>JDBI example</description>
     <properties>
         <java.version>17</java.version>
-        <jdbi3.version>3.33.0</jdbi3.version>
+        <jdbi3.version>3.34.0</jdbi3.version>
     </properties>
     <dependencies>
         <dependency>
