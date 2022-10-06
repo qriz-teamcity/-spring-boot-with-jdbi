@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.time.ZonedDateTime;
-import java.util.List;
 
 @SpringBootApplication
 public class JdbiSpringApplication {
@@ -23,7 +22,7 @@ public class JdbiSpringApplication {
 	@Bean
 	CommandLineRunner createInitialTasks(TaskService taskService) {
 		return args -> {
-			Task task = taskService.createNew("Understand this code", ZonedDateTime.now().plusDays(1));
+			Task task = taskService.createNew("Understand this code", ZonedDateTime.parse("2022-10-07T11:44:49.900631+02:00"));
 			LOGGER.debug("Created task {}", task);
 		};
 	}
