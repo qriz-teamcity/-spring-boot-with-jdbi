@@ -1,5 +1,7 @@
 # Spring Boot with JDBI
 
+[![Java CI](https://github.com/phxql/spring-boot-with-jdbi/actions/workflows/build.yaml/badge.svg)](https://github.com/phxql/spring-boot-with-jdbi/actions/workflows/build.yaml)
+
 An example project which showcases Spring Boot with JDBI.
 
 * Database migrations are in [src/main/resources/db/migration](src/main/resources/db/migration) and are executed through
