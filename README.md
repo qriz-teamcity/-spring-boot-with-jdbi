@@ -21,7 +21,7 @@ An example project which showcases Spring Boot with JDBI.
 
 ## Create a task
 
-* `curl -X POST -d {"due":"2023-01-01T00:00:00Z","title":"bar"} http://localhost:8080/task -s -S -v -H "Content-Type: application/json" -H "Accept: application/json, */*"`
+* `curl -X POST -d '{"due":"2023-01-01T00:00:00Z","title":"bar"}' http://localhost:8080/task -s -S -v -H "Content-Type: application/json" -H "Accept: application/json, */*"`
 * This is handled by the [TaskController](src/main/java/de/mkammerer/jdbispring/rest/TaskController.java)
 
 ## JDBI Configuration
