@@ -18,7 +18,7 @@ class JdbiTaskRepository implements TaskRepository {
     @Override
     public Task createNew(String title, ZonedDateTime due) {
         long id = taskDao.insert(title, due);
-        return new Task(id, title, due);
+        return new Task(Task.Id.of(id), title, due);
     }
 
     @Override

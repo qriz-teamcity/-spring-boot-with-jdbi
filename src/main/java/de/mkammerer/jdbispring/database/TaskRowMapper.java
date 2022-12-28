@@ -20,6 +20,6 @@ class TaskRowMapper implements RowMapper<Task> {
         String title = rs.getString("title");
         ZonedDateTime due = rs.getObject("due", ZonedDateTime.class);
 
-        return new Task(id, title, due);
+        return new Task(Task.Id.of(id), title, due);
     }
 }
