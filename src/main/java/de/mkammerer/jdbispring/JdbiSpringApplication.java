@@ -11,17 +11,17 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class JdbiSpringApplication {
-	private static final Logger LOGGER = LoggerFactory.getLogger(JdbiSpringApplication.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(JdbiSpringApplication.class);
 
-	public static void main(String[] args) {
-		SpringApplication.run(JdbiSpringApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JdbiSpringApplication.class, args);
+    }
 
-	@Bean
-	CommandLineRunner createInitialTasks(TaskService taskService) {
-		return args -> {
-			Task task = taskService.createNew("Understand this code", null);
-			LOGGER.debug("Created task {}", task);
-		};
-	}
+    @Bean
+    CommandLineRunner createInitialTasks(TaskService taskService) {
+        return args -> {
+            Task task = taskService.createNew("Understand this code", null);
+            LOGGER.debug("Created task {}", task);
+        };
+    }
 }

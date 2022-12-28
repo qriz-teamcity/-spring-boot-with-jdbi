@@ -1,2 +1,2 @@
 logging.level:
-  de.mkammerer.jdbispring: DEBUG
+    de.mkammerer.jdbispring: DEBUG

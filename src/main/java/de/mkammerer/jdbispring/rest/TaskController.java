@@ -21,8 +21,8 @@ public class TaskController {
     @GetMapping
     public List<TaskDto> findAll() {
         return taskService.findAll().stream()
-                .map(TaskDto::fromTask)
-                .toList();
+            .map(TaskDto::fromTask)
+            .toList();
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
