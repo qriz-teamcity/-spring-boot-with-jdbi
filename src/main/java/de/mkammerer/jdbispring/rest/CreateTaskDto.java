@@ -1,10 +1,10 @@
 package de.mkammerer.jdbispring.rest;
 
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.lang.Nullable;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.Future;
-import javax.validation.constraints.NotBlank;
 import java.time.ZonedDateTime;
 
 @Validated
