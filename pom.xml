@@ -14,7 +14,7 @@
     <name>jdbi-spring</name>
     <description>JDBI example</description>
     <properties>
-        <jdbi3.version>3.40.0</jdbi3.version>
+        <jdbi3.version>3.41.0</jdbi3.version>
     </properties>
     <dependencies>
         <dependency>
